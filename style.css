@@ -1,0 +1,129 @@
+body {
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.love {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  height: 400px;
+  background: #fff;
+  border-radius: 32px;
+  box-shadow: 0 4px 32px rgba(0,0,0,0.1);
+  position: relative;
+}
+
+.block {
+  position: relative;
+  width: 600px;
+  height: 400px;
+}
+
+#character {
+  position: absolute;
+  left: 30px;
+  bottom: 30px;
+  z-index: 2;
+  background: transparent;
+  width: 100px;   /* büyütüldü */
+  height: 100px;  /* büyütüldü */
+}
+
+#hearts {
+  position: absolute;
+  left: 180px;
+  top: 80px;
+  width: 320px;
+  height: 240px;
+  pointer-events: none;
+  transition: top 0.8s;
+}
+
+.heart {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  background: none;
+  opacity: 0;
+  transition: opacity 0.3s;
+  box-sizing: border-box;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.heart svg {
+  width: 18px;
+  height: 18px;
+  display: block;
+  filter: drop-shadow(0 1px 2px #b22222) drop-shadow(0 0px 2px #fff6);
+}
+
+#love-text {
+  position: absolute;
+  left: 50%;
+  top: 320px;
+  transform: translateX(-50%);
+  font-size: 2rem;
+  color: #e74c3c;
+  font-family: Arial, Helvetica, "Segoe UI", sans-serif;
+  opacity: 0;
+  transition: opacity 0.8s;
+  text-shadow: 0 2px 8px #fff, 0 2px 16px #e74c3c44;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Üstteki 3'lü kalpler */
+.heart-row-top-3 {
+  top: 10px;
+}
+.heart-row-top-3.left {
+  left: 60px;
+}
+.heart-row-top-3.center {
+  left: 151px;
+}
+.heart-row-top-3.right {
+  left: 242px;
+}
+
+/* 3'lünün üstüne ortalanmış 2'li kalpler */
+.heart-row-top-2 {
+  top: -10px;
+}
+.heart-row-top-2.left {
+  left: 105px;
+}
+.heart-row-top-2.right {
+  left: 197px;
+}
+
+/* En üstte ortalanmış 1 kalp */
+.heart-row-top-1 {
+  top: -30px;
+  left: 151px;
+}
+
+/* Karakter bacakları için (2 bacak) özel bir stil gerekirse örnek: */
+.leg {
+  position: absolute;
+  width: 13px;    /* büyütüldü */
+  height: 38px;   /* büyütüldü */
+  background: transparent;
+  left: 56px;     /* büyütüldü */
+  bottom: 0;
+}
+.leg.right {
+  left: 131px;    /* büyütüldü */
+}
