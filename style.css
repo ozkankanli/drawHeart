@@ -70,7 +70,7 @@ body {
   left: 50%;
   top: 320px;
   transform: translateX(-50%);
-  font-size: 12px;
+  font-size: 10px;
   color: #e74c3c;
   font-family: Arial, Helvetica, "Segoe UI", sans-serif;
   opacity: 0;
