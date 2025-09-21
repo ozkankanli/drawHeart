@@ -67,7 +67,7 @@ body {
 
 #love-text {
   position: absolute;
-  left: 50%;
+  left: 20%;
   top: 320px;
   transform: translateX(-50%);
   font-size: 10px;
