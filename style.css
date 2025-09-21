@@ -69,8 +69,7 @@ body {
   position: absolute;
   left: 50%;
   top: 320px;
-  transform: translateX(-50%)
-  translateX(-80ch);
+  transform: translateX(calc(-50% - 20ch))
   font-size: 14px;
   color: #e74c3c;
   font-family: Arial, Helvetica, "Segoe UI", sans-serif;
